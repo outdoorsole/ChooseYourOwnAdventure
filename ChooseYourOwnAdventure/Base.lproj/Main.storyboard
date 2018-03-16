@@ -122,12 +122,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TPe-Ep-AxK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tgZ-8p-JDf">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="8RP-XE-Sxd"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQV-t8-1jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-230" y="903"/>
         </scene>
-        <!--Follow View Controller-->
+        <!--Part 2-->
         <scene sceneID="x5Y-uS-f4u">
             <objects>
                 <viewController id="U6K-JG-FtH" customClass="FollowViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
@@ -156,13 +159,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you decide to follow them inside?"/>
                                 <connections>
-                                    <segue destination="C3b-ky-zNV" kind="show" id="D06-WQ-GgB"/>
+                                    <segue destination="C3b-ky-zNV" kind="show" identifier="warehouseSegue" id="D06-WQ-GgB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="a5x-H1-Q1L"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Part 2" id="qPh-kl-ygI">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="5Hi-JF-z38">
+                            <connections>
+                                <action selector="startOverButton:" destination="U6K-JG-FtH" id="3bn-lx-iw6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="firstChoiceButton" destination="Xha-z8-Bbx" id="Gxm-ia-PtH"/>
                         <outlet property="secondChoiceButton" destination="Dsc-al-n7q" id="0Ec-U1-Rc2"/>
@@ -172,7 +182,7 @@
             </objects>
             <point key="canvasLocation" x="455" y="134"/>
         </scene>
-        <!--Trench View Controller-->
+        <!--Part 3-->
         <scene sceneID="VeO-8l-soB">
             <objects>
                 <viewController id="C3b-ky-zNV" customClass="TrenchViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,18 +190,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-6u-V7f">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You enter the warehouse, and it's much bigger than it looks. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-6u-V7f">
                                 <rect key="frame" x="67" y="202" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">The Centaur is wearing a black trench coat and looks really suspicious. As you slowly follow behind, careful not to be seen, you see him dart into a nearby local business. What will you do?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WQL-c7-xfd">
-                                <rect key="frame" x="42" y="356" width="264" height="59"/>
+                                <rect key="frame" x="31" y="356" width="287" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="do you decide to follow them inside?"/>
+                                <state key="normal" title="do you decide to go through the corridor?"/>
                                 <connections>
                                     <segue destination="Ihr-SB-SlE" kind="show" identifier="EnterBuildingSegue" id="OZp-xa-fO6"/>
                                 </connections>
@@ -208,12 +217,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EOQ-gN-QNf"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Part 3" id="x9r-9G-oda">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="Aq3-mg-s6C">
+                            <connections>
+                                <action selector="startOverButton:" destination="C3b-ky-zNV" id="pK9-AJ-Cy3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="firstChoiceButton" destination="WQL-c7-xfd" id="tIt-Br-vCR"/>
+                        <outlet property="secondChoiceButton" destination="g1I-6a-1ZQ" id="sTc-w9-kRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wt9-Pk-GrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1168" y="134"/>
         </scene>
-        <!--Enter Building View Controller-->
+        <!--Part 4-->
         <scene sceneID="7bM-w4-CAJ">
             <objects>
                 <viewController id="Ihr-SB-SlE" customClass="EnterBuildingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,10 +241,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="As you enter the building, the Centaur pins you to the wall.. &quot;Hey, who do you think you are?&quot; Why are you following us?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-xA-bad">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-xA-bad">
                                 <rect key="frame" x="80" y="197" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">As you enter the corridor, the Centaur jumps out from behind the door and pins you to the wall.. "Hey, who do you think you are?" Why are you following us?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -248,6 +269,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AUy-5f-DKg"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Part 4" id="Rxu-o9-MY1">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="jkP-Qa-v5w"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihR-Ig-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,6 +304,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kcE-oy-4pP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zfb-07-Pns">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="sXl-Db-PRZ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFt-rd-Dep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,6 +339,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="I0v-8I-3Hb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hHa-wq-RCt">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="QGT-Ox-hsu"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z06-Pa-ReP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +374,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XsE-7f-fGj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kYG-BW-ojf">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="wLK-R7-npB"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVO-Ry-ZbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

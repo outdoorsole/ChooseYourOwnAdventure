@@ -27,5 +27,22 @@ class FollowViewController: UIViewController {
             secondChoiceButton.setTitle("Do you decide to turn back, forget it all, and go on your way to school?", for: UIControlState.normal)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "warehouseSegue" {
+            print("This was selected!")
+            
+            let nextViewController = segue.destination as? TrenchViewController
+            
+            if let nextVC = nextViewController {
+                nextVC.name = name
+            }
+        }
+    }
 
+    @IBAction func startOverButton(_ sender: UIBarButtonItem) {
+        if let navCon = self.navigationController {
+            navCon.popToRootViewController(animated: true)
+        }
+    }
 }

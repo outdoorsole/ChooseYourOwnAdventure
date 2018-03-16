@@ -10,10 +10,15 @@ import UIKit
 
 class EnterBuildingViewController: UIViewController {
 
+    var name: String?
+    
+    @IBOutlet weak var firstChoiceButton: UIButton!
+    @IBOutlet weak var secondChoiceButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
 }
