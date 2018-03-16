@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MKa-5v-hdG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="72Y-Rl-fMG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="don-Xo-e9y">
+            <objects>
+                <navigationController id="72Y-Rl-fMG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oQJ-tS-Mh0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Sxu-TF-QcU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWm-Fu-PNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1058" y="134"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -84,12 +100,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-268" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--First Ending View Controller-->
         <scene sceneID="STn-QA-WaM">
             <objects>
-                <viewController id="VAG-6k-3P3" sceneMemberID="viewController">
+                <viewController id="VAG-6k-3P3" customClass="FirstEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="csf-K5-oWd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,12 +125,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQV-t8-1jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="841"/>
+            <point key="canvasLocation" x="-230" y="903"/>
         </scene>
-        <!--View Controller-->
+        <!--Follow View Controller-->
         <scene sceneID="x5Y-uS-f4u">
             <objects>
-                <viewController id="U6K-JG-FtH" sceneMemberID="viewController">
+                <viewController id="U6K-JG-FtH" customClass="FollowViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z7g-V5-g9o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,11 +147,17 @@
                                 <rect key="frame" x="82" y="463" width="194" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you decide to turn back, forget it all, and go on your way to school?"/>
+                                <connections>
+                                    <segue destination="VAG-6k-3P3" kind="show" id="cWv-cc-3jF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-z8-Bbx">
                                 <rect key="frame" x="61" y="376" width="237" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you decide to follow them inside?"/>
+                                <connections>
+                                    <segue destination="C3b-ky-zNV" kind="show" id="D06-WQ-GgB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,12 +166,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SM7-Jm-Q0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975.20000000000005" y="127.28635682158921"/>
+            <point key="canvasLocation" x="455" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Trench View Controller-->
         <scene sceneID="VeO-8l-soB">
             <objects>
-                <viewController id="C3b-ky-zNV" sceneMemberID="viewController">
+                <viewController id="C3b-ky-zNV" customClass="TrenchViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dUP-v7-UGh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,11 +188,17 @@
                                 <rect key="frame" x="42" y="356" width="264" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you decide to follow them inside?"/>
+                                <connections>
+                                    <segue destination="Ihr-SB-SlE" kind="show" identifier="EnterBuildingSegue" id="OZp-xa-fO6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-6a-1ZQ">
                                 <rect key="frame" x="67" y="449" width="202" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you decide to make some noise, alerting the police officer nearby?"/>
+                                <connections>
+                                    <segue destination="JTO-IO-Q21" kind="show" identifier="secondEndingSegue" id="NEo-M7-8HW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,12 +207,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wt9-Pk-GrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767.2" y="127.28635682158921"/>
+            <point key="canvasLocation" x="1168" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Enter Building View Controller-->
         <scene sceneID="7bM-w4-CAJ">
             <objects>
-                <viewController id="Ihr-SB-SlE" sceneMemberID="viewController">
+                <viewController id="Ihr-SB-SlE" customClass="EnterBuildingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kuk-ag-dkN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,11 +228,17 @@
                                 <rect key="frame" x="80" y="366" width="231" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you tell him that you are here for the birthday party?"/>
+                                <connections>
+                                    <segue destination="8Gk-Rh-sY6" kind="show" identifier="fourthEndingSegue" id="mv9-Zg-bds"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bs5-eU-eD4">
                                 <rect key="frame" x="75" y="460" width="224" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you fight him off and run back to school?"/>
+                                <connections>
+                                    <segue destination="iaS-mR-VKo" kind="show" identifier="thirdEndingSegue" id="8ZC-xl-VrG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,12 +247,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihR-Ig-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2584.8000000000002" y="129.98500749625188"/>
+            <point key="canvasLocation" x="1998" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth Ending View Controller-->
         <scene sceneID="fEJ-CM-9c1">
             <objects>
-                <viewController id="8Gk-Rh-sY6" sceneMemberID="viewController">
+                <viewController id="8Gk-Rh-sY6" customClass="FourthEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GTv-XL-nX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,12 +279,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFt-rd-Dep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3368" y="130"/>
+            <point key="canvasLocation" x="2716" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Ending View Controller-->
         <scene sceneID="LvM-rb-Z5s">
             <objects>
-                <viewController id="JTO-IO-Q21" sceneMemberID="viewController">
+                <viewController id="JTO-IO-Q21" customClass="SecondEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tj0-cN-tXx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,12 +311,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z06-Pa-ReP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1772" y="819.94002998500753"/>
+            <point key="canvasLocation" x="1167" y="878"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Ending View Controller-->
         <scene sceneID="W0O-tc-JaT">
             <objects>
-                <viewController id="iaS-mR-VKo" sceneMemberID="viewController">
+                <viewController id="iaS-mR-VKo" customClass="ThirdEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ivs-zv-y4M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,25 +343,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVO-Ry-ZbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="816"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="a0E-OP-cor">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MKa-5v-hdG" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sbg-VO-waZ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AAU-eR-yMr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R9m-0n-Jax" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-543" y="134"/>
+            <point key="canvasLocation" x="1998" y="878"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cWv-cc-3jF"/>
+    </inferredMetricsTieBreakers>
 </document>
