@@ -38,4 +38,12 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "followSegue" {
+            print("This was selected!")
+        } else if segue.identifier == "firstEndingSegue" {
+            print("End of story!")
+        }
+    }
+    
 }
