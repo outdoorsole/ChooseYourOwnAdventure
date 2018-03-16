@@ -163,6 +163,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="a5x-H1-Q1L"/>
                     </view>
+                    <connections>
+                        <outlet property="firstChoiceButton" destination="Xha-z8-Bbx" id="Gxm-ia-PtH"/>
+                        <outlet property="secondChoiceButton" destination="Dsc-al-n7q" id="0Ec-U1-Rc2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SM7-Jm-Q0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
