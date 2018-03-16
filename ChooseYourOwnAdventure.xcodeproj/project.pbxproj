@@ -15,10 +15,7 @@
 		16D63497205B9226006A7781 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D63496205B9226006A7781 /* FollowViewController.swift */; };
 		16D63499205B94AA006A7781 /* TrenchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D63498205B94AA006A7781 /* TrenchViewController.swift */; };
 		16D6349B205B9507006A7781 /* EnterBuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6349A205B9507006A7781 /* EnterBuildingViewController.swift */; };
-		16D6349D205B9532006A7781 /* FourthEndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6349C205B9532006A7781 /* FourthEndingViewController.swift */; };
-		16D6349F205B953E006A7781 /* ThirdEndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6349E205B953E006A7781 /* ThirdEndingViewController.swift */; };
-		16D634A1205B9548006A7781 /* SecondEndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D634A0205B9548006A7781 /* SecondEndingViewController.swift */; };
-		16D634A3205B954F006A7781 /* FirstEndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D634A2205B954F006A7781 /* FirstEndingViewController.swift */; };
+		16E7D4ED205C065A0004A929 /* EndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7D4EC205C065A0004A929 /* EndingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +29,7 @@
 		16D63496205B9226006A7781 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		16D63498205B94AA006A7781 /* TrenchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrenchViewController.swift; sourceTree = "<group>"; };
 		16D6349A205B9507006A7781 /* EnterBuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterBuildingViewController.swift; sourceTree = "<group>"; };
-		16D6349C205B9532006A7781 /* FourthEndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthEndingViewController.swift; sourceTree = "<group>"; };
-		16D6349E205B953E006A7781 /* ThirdEndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdEndingViewController.swift; sourceTree = "<group>"; };
-		16D634A0205B9548006A7781 /* SecondEndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondEndingViewController.swift; sourceTree = "<group>"; };
-		16D634A2205B954F006A7781 /* FirstEndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstEndingViewController.swift; sourceTree = "<group>"; };
+		16E7D4EC205C065A0004A929 /* EndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +67,7 @@
 				16D63496205B9226006A7781 /* FollowViewController.swift */,
 				16D63498205B94AA006A7781 /* TrenchViewController.swift */,
 				16D6349A205B9507006A7781 /* EnterBuildingViewController.swift */,
-				16D6349C205B9532006A7781 /* FourthEndingViewController.swift */,
-				16D6349E205B953E006A7781 /* ThirdEndingViewController.swift */,
-				16D634A0205B9548006A7781 /* SecondEndingViewController.swift */,
-				16D634A2205B954F006A7781 /* FirstEndingViewController.swift */,
+				16E7D4EC205C065A0004A929 /* EndingViewController.swift */,
 				167CE914205754E5004460A5 /* Main.storyboard */,
 				167CE917205754E5004460A5 /* Assets.xcassets */,
 				167CE919205754E5004460A5 /* LaunchScreen.storyboard */,
@@ -158,13 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D63499205B94AA006A7781 /* TrenchViewController.swift in Sources */,
+				16E7D4ED205C065A0004A929 /* EndingViewController.swift in Sources */,
 				16D6349B205B9507006A7781 /* EnterBuildingViewController.swift in Sources */,
-				16D6349D205B9532006A7781 /* FourthEndingViewController.swift in Sources */,
-				16D6349F205B953E006A7781 /* ThirdEndingViewController.swift in Sources */,
-				16D634A3205B954F006A7781 /* FirstEndingViewController.swift in Sources */,
 				16D63497205B9226006A7781 /* FollowViewController.swift in Sources */,
 				167CE913205754E5004460A5 /* HomeViewController.swift in Sources */,
-				16D634A1205B9548006A7781 /* SecondEndingViewController.swift in Sources */,
 				167CE911205754E5004460A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

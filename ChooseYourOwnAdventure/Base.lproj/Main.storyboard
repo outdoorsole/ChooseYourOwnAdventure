@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="-268" y="134"/>
         </scene>
-        <!--First Ending View Controller-->
+        <!--Ending View Controller-->
         <scene sceneID="STn-QA-WaM">
             <objects>
-                <viewController id="VAG-6k-3P3" customClass="FirstEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VAG-6k-3P3" customClass="EndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="csf-K5-oWd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,11 @@
                         <viewLayoutGuide key="safeArea" id="TPe-Ep-AxK"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgZ-8p-JDf">
-                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="8RP-XE-Sxd"/>
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="8RP-XE-Sxd">
+                            <connections>
+                                <action selector="startOverButton:" destination="VAG-6k-3P3" id="i7A-OR-Im1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQV-t8-1jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,10 +289,10 @@
             </objects>
             <point key="canvasLocation" x="1998" y="134"/>
         </scene>
-        <!--Fourth Ending View Controller-->
+        <!--Ending View Controller-->
         <scene sceneID="fEJ-CM-9c1">
             <objects>
-                <viewController id="8Gk-Rh-sY6" customClass="FourthEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Gk-Rh-sY6" customClass="EndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GTv-XL-nX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,17 +317,21 @@
                         <viewLayoutGuide key="safeArea" id="kcE-oy-4pP"/>
                     </view>
                     <navigationItem key="navigationItem" id="zfb-07-Pns">
-                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="sXl-Db-PRZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="sXl-Db-PRZ">
+                            <connections>
+                                <action selector="startOverButton:" destination="8Gk-Rh-sY6" id="d4p-Or-3Uy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFt-rd-Dep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2716" y="134"/>
         </scene>
-        <!--Second Ending View Controller-->
+        <!--Ending View Controller-->
         <scene sceneID="LvM-rb-Z5s">
             <objects>
-                <viewController id="JTO-IO-Q21" customClass="SecondEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JTO-IO-Q21" customClass="EndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tj0-cN-tXx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,17 +356,21 @@
                         <viewLayoutGuide key="safeArea" id="I0v-8I-3Hb"/>
                     </view>
                     <navigationItem key="navigationItem" id="hHa-wq-RCt">
-                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="QGT-Ox-hsu"/>
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="QGT-Ox-hsu">
+                            <connections>
+                                <action selector="startOverButton:" destination="JTO-IO-Q21" id="o0I-zK-Jkl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z06-Pa-ReP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1167" y="878"/>
         </scene>
-        <!--Third Ending View Controller-->
+        <!--Ending View Controller-->
         <scene sceneID="W0O-tc-JaT">
             <objects>
-                <viewController id="iaS-mR-VKo" customClass="ThirdEndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iaS-mR-VKo" customClass="EndingViewController" customModule="ChooseYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ivs-zv-y4M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -383,7 +395,11 @@
                         <viewLayoutGuide key="safeArea" id="XsE-7f-fGj"/>
                     </view>
                     <navigationItem key="navigationItem" id="kYG-BW-ojf">
-                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="wLK-R7-npB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="wLK-R7-npB">
+                            <connections>
+                                <action selector="startOverButton:" destination="iaS-mR-VKo" id="vUO-mZ-LwG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVO-Ry-ZbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
