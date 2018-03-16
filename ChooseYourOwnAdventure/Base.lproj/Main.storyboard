@@ -202,7 +202,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you decide to go through the corridor?"/>
                                 <connections>
-                                    <segue destination="Ihr-SB-SlE" kind="show" identifier="EnterBuildingSegue" id="OZp-xa-fO6"/>
+                                    <segue destination="Ihr-SB-SlE" kind="show" identifier="enterBuildingSegue" id="OZp-xa-fO6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-6a-1ZQ">
@@ -270,8 +270,16 @@
                         <viewLayoutGuide key="safeArea" id="AUy-5f-DKg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Part 4" id="Rxu-o9-MY1">
-                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="jkP-Qa-v5w"/>
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="jkP-Qa-v5w">
+                            <connections>
+                                <action selector="startOverButton:" destination="Ihr-SB-SlE" id="0uN-jX-7J6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstChoiceButton" destination="8sl-HU-KyQ" id="QrE-hM-PR2"/>
+                        <outlet property="secondChoiceButton" destination="Bs5-eU-eD4" id="phd-pW-kGV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihR-Ig-TAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

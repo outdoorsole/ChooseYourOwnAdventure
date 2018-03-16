@@ -27,6 +27,18 @@ class TrenchViewController: UIViewController {
             secondChoiceButton.setTitle("Do you decide to make some noise, alerting the police officer nearby?", for: UIControlState.normal)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "enterBuildingSegue" {
+            print("This was selected!")
+            
+            let nextViewController = segue.destination as? EnterBuildingViewController
+            
+            if let nextVC = nextViewController {
+                nextVC.name = name
+            }
+        }
+    }
 
     @IBAction func startOverButton(_ sender: UIBarButtonItem) {
         if let navCon = self.navigationController {
