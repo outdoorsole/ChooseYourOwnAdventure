@@ -110,9 +110,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="isN-cJ-anE">
-                                <rect key="frame" x="67" y="198" width="240" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE END." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-HU-7gP">
+                                <rect key="frame" x="156" y="568" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="isN-cJ-anE">
+                                <rect key="frame" x="67" y="198" width="240" height="271"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You go to your iOS class, and wonder about the Centaur's whereabouts. Your iOS instructor then says that a Centaur and Unicorn were found by police hoarding a few balloons and streamers. There is no way of knowing what they could have been capable of.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -120,6 +125,15 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BwP-HU-7gP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TPe-Ep-AxK" secondAttribute="leading" id="2rT-7q-a1i"/>
+                            <constraint firstItem="BwP-HU-7gP" firstAttribute="top" secondItem="isN-cJ-anE" secondAttribute="bottom" constant="99" id="37r-QM-PZE"/>
+                            <constraint firstAttribute="trailing" secondItem="BwP-HU-7gP" secondAttribute="trailing" constant="144" id="EGu-G4-ciA"/>
+                            <constraint firstItem="isN-cJ-anE" firstAttribute="centerX" secondItem="csf-K5-oWd" secondAttribute="centerX" id="OTM-Y4-1en"/>
+                            <constraint firstItem="isN-cJ-anE" firstAttribute="leading" secondItem="TPe-Ep-AxK" secondAttribute="leading" constant="67" id="Xcb-9y-eX7"/>
+                            <constraint firstItem="isN-cJ-anE" firstAttribute="top" secondItem="TPe-Ep-AxK" secondAttribute="top" constant="134" id="f8K-jj-V20"/>
+                            <constraint firstItem="isN-cJ-anE" firstAttribute="centerY" secondItem="csf-K5-oWd" secondAttribute="centerY" id="xn8-cM-iL3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TPe-Ep-AxK"/>
                     </view>
                     <navigationItem key="navigationItem" id="tgZ-8p-JDf">
@@ -142,25 +156,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2GF-Ff-D0H">
-                                <rect key="frame" x="67" y="240" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2GF-Ff-D0H">
+                                <rect key="frame" x="40" y="164" width="295" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="dkd-B9-fhm"/>
+                                </constraints>
                                 <string key="text">The Centaur is wearing a black trench coat and looks really suspicious. As you slowly follow behind, careful not to be seen, you see him dart into a nearby local business. What will you do?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dsc-al-n7q">
-                                <rect key="frame" x="82" y="463" width="194" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dsc-al-n7q">
+                                <rect key="frame" x="40" y="360" width="295" height="30"/>
                                 <state key="normal" title="do you decide to turn back, forget it all, and go on your way to school?"/>
                                 <connections>
                                     <segue destination="VAG-6k-3P3" kind="show" id="cWv-cc-3jF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-z8-Bbx">
-                                <rect key="frame" x="61" y="376" width="237" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-z8-Bbx">
+                                <rect key="frame" x="40" y="300" width="295" height="30"/>
                                 <state key="normal" title="do you decide to follow them inside?"/>
                                 <connections>
                                     <segue destination="C3b-ky-zNV" kind="show" identifier="warehouseSegue" id="D06-WQ-GgB"/>
@@ -168,6 +182,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dsc-al-n7q" firstAttribute="leading" secondItem="z7g-V5-g9o" secondAttribute="leading" constant="40" id="4R9-6g-Rtv"/>
+                            <constraint firstItem="2GF-Ff-D0H" firstAttribute="top" secondItem="a5x-H1-Q1L" secondAttribute="top" constant="100" id="CdN-zE-Syq"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Dsc-al-n7q" secondAttribute="trailing" constant="40" id="EL0-0o-rFc"/>
+                            <constraint firstItem="Xha-z8-Bbx" firstAttribute="leading" secondItem="a5x-H1-Q1L" secondAttribute="leading" constant="40" id="OQl-Ze-uWm"/>
+                            <constraint firstItem="2GF-Ff-D0H" firstAttribute="leading" secondItem="a5x-H1-Q1L" secondAttribute="leading" constant="40" id="Tdw-KK-DAw"/>
+                            <constraint firstItem="Dsc-al-n7q" firstAttribute="top" secondItem="Xha-z8-Bbx" secondAttribute="bottom" constant="30" id="b4B-T8-46v"/>
+                            <constraint firstItem="Xha-z8-Bbx" firstAttribute="top" secondItem="2GF-Ff-D0H" secondAttribute="bottom" constant="8" symbolic="YES" id="dQl-WJ-xaB"/>
+                            <constraint firstItem="a5x-H1-Q1L" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Xha-z8-Bbx" secondAttribute="trailing" constant="40" id="jdT-Ar-KC7"/>
+                            <constraint firstItem="Dsc-al-n7q" firstAttribute="centerX" secondItem="z7g-V5-g9o" secondAttribute="centerX" id="vMT-oT-2vU"/>
+                            <constraint firstItem="a5x-H1-Q1L" firstAttribute="trailing" secondItem="2GF-Ff-D0H" secondAttribute="trailing" constant="40" id="vWK-pi-UaL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a5x-H1-Q1L"/>
                     </view>
                     <navigationItem key="navigationItem" title="Part 2" id="qPh-kl-ygI">
@@ -184,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SM7-Jm-Q0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="134"/>
+            <point key="canvasLocation" x="453.60000000000002" y="133.5832083958021"/>
         </scene>
         <!--Part 3-->
         <scene sceneID="VeO-8l-soB">
@@ -194,31 +220,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You enter the warehouse, and it's much bigger than it looks. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-6u-V7f">
-                                <rect key="frame" x="67" y="202" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WQL-c7-xfd">
-                                <rect key="frame" x="31" y="356" width="287" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WQL-c7-xfd">
+                                <rect key="frame" x="40" y="317" width="295" height="30"/>
                                 <state key="normal" title="do you decide to go through the corridor?"/>
                                 <connections>
                                     <segue destination="Ihr-SB-SlE" kind="show" identifier="enterBuildingSegue" id="OZp-xa-fO6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-6a-1ZQ">
-                                <rect key="frame" x="67" y="449" width="202" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-6a-1ZQ">
+                                <rect key="frame" x="40" y="380" width="295" height="30"/>
                                 <state key="normal" title="do you decide to make some noise, alerting the police officer nearby?"/>
                                 <connections>
                                     <segue destination="JTO-IO-Q21" kind="show" identifier="secondEndingSegue" id="NEo-M7-8HW"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You enter the warehouse, and it's much bigger than it looks. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-6u-V7f">
+                                <rect key="frame" x="40" y="164" width="295" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0nF-hf-P5Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g1I-6a-1ZQ" firstAttribute="leading" secondItem="EOQ-gN-QNf" secondAttribute="leading" constant="40" id="1Ip-hy-vdo"/>
+                            <constraint firstItem="CaR-6u-V7f" firstAttribute="top" secondItem="EOQ-gN-QNf" secondAttribute="top" constant="100" id="2hf-YN-5TR"/>
+                            <constraint firstItem="EOQ-gN-QNf" firstAttribute="trailing" secondItem="g1I-6a-1ZQ" secondAttribute="trailing" constant="40" id="Lor-Me-nYP"/>
+                            <constraint firstItem="EOQ-gN-QNf" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="WQL-c7-xfd" secondAttribute="trailing" constant="40" id="Pcf-sR-dmw"/>
+                            <constraint firstItem="g1I-6a-1ZQ" firstAttribute="top" secondItem="WQL-c7-xfd" secondAttribute="bottom" constant="33" id="Scb-WH-njf"/>
+                            <constraint firstItem="WQL-c7-xfd" firstAttribute="top" secondItem="CaR-6u-V7f" secondAttribute="bottom" constant="25" id="bMG-yk-uxO"/>
+                            <constraint firstItem="WQL-c7-xfd" firstAttribute="leading" secondItem="EOQ-gN-QNf" secondAttribute="leading" constant="40" id="dZS-vi-47w"/>
+                            <constraint firstItem="EOQ-gN-QNf" firstAttribute="trailing" secondItem="CaR-6u-V7f" secondAttribute="trailing" constant="40" id="fFH-T5-AXa"/>
+                            <constraint firstItem="WQL-c7-xfd" firstAttribute="centerX" secondItem="dUP-v7-UGh" secondAttribute="centerX" id="t9e-VZ-czE"/>
+                            <constraint firstItem="CaR-6u-V7f" firstAttribute="leading" secondItem="EOQ-gN-QNf" secondAttribute="leading" constant="40" id="yWP-Hb-8IG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EOQ-gN-QNf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Part 3" id="x9r-9G-oda">
@@ -245,32 +283,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-xA-bad">
-                                <rect key="frame" x="80" y="197" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-xA-bad">
+                                <rect key="frame" x="40" y="164" width="295" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Nqj-zb-T6C"/>
+                                </constraints>
                                 <string key="text">As you enter the corridor, the Centaur jumps out from behind the door and pins you to the wall.. "Hey, who do you think you are?" Why are you following us?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8sl-HU-KyQ">
-                                <rect key="frame" x="80" y="366" width="231" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="do you tell him that you are here for the birthday party?"/>
-                                <connections>
-                                    <segue destination="8Gk-Rh-sY6" kind="show" identifier="fourthEndingSegue" id="mv9-Zg-bds"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bs5-eU-eD4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bs5-eU-eD4">
                                 <rect key="frame" x="75" y="460" width="224" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="do you fight him off and run back to school?"/>
                                 <connections>
                                     <segue destination="iaS-mR-VKo" kind="show" identifier="thirdEndingSegue" id="8ZC-xl-VrG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8sl-HU-KyQ">
+                                <rect key="frame" x="80" y="366" width="231" height="30"/>
+                                <state key="normal" title="do you tell him that you are here for the birthday party?"/>
+                                <connections>
+                                    <segue destination="8Gk-Rh-sY6" kind="show" identifier="fourthEndingSegue" id="mv9-Zg-bds"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0vx-xA-bad" firstAttribute="top" secondItem="AUy-5f-DKg" secondAttribute="top" constant="100" id="3TE-iX-Gdu"/>
+                            <constraint firstItem="8sl-HU-KyQ" firstAttribute="leading" secondItem="AUy-5f-DKg" secondAttribute="leading" constant="80" id="3p4-Jo-HFC"/>
+                            <constraint firstItem="0vx-xA-bad" firstAttribute="leading" secondItem="AUy-5f-DKg" secondAttribute="leading" constant="40" id="4Rw-yQ-flj"/>
+                            <constraint firstItem="AUy-5f-DKg" firstAttribute="trailing" secondItem="0vx-xA-bad" secondAttribute="trailing" constant="40" id="7Jv-jf-px2"/>
+                            <constraint firstItem="0vx-xA-bad" firstAttribute="centerX" secondItem="Bs5-eU-eD4" secondAttribute="centerX" id="8Qp-vz-UWu"/>
+                            <constraint firstItem="Bs5-eU-eD4" firstAttribute="top" secondItem="8sl-HU-KyQ" secondAttribute="bottom" constant="64" id="8pE-rg-9F7"/>
+                            <constraint firstItem="AUy-5f-DKg" firstAttribute="trailing" secondItem="8sl-HU-KyQ" secondAttribute="trailing" constant="64" id="CFE-rO-IxA"/>
+                            <constraint firstItem="8sl-HU-KyQ" firstAttribute="top" secondItem="0vx-xA-bad" secondAttribute="bottom" constant="74" id="GPX-LO-zuf"/>
+                            <constraint firstItem="Bs5-eU-eD4" firstAttribute="leading" secondItem="AUy-5f-DKg" secondAttribute="leading" constant="75" id="It3-43-bro"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AUy-5f-DKg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Part 4" id="Rxu-o9-MY1">
@@ -297,23 +346,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f8t-LD-DdC">
-                                <rect key="frame" x="67" y="197" width="240" height="166.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f8t-LD-DdC">
+                                <rect key="frame" x="67" y="197" width="240" height="273"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">"Oh, why didn't you say so!" Immediately, balloons, streamers, cake, all come out from the kitchen, and everyone sits down at the table to celebrate Unicorn's birthday. Centaur opens up his trenchcoat to pull out a birthday card to hand to Unicorn. Everyone parties into the night.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE END." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-ZR-iFy">
-                                <rect key="frame" x="135" y="416" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE END." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-ZR-iFy">
+                                <rect key="frame" x="135" y="522" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NWZ-ZR-iFy" secondAttribute="trailing" constant="20" symbolic="YES" id="H3d-dC-ogl"/>
+                            <constraint firstItem="f8t-LD-DdC" firstAttribute="centerX" secondItem="GTv-XL-nX5" secondAttribute="centerX" id="WIp-Fk-ylj"/>
+                            <constraint firstItem="f8t-LD-DdC" firstAttribute="centerY" secondItem="GTv-XL-nX5" secondAttribute="centerY" id="aEz-bT-Fxg"/>
+                            <constraint firstItem="NWZ-ZR-iFy" firstAttribute="top" secondItem="f8t-LD-DdC" secondAttribute="bottom" constant="52" id="aHO-J7-dQE"/>
+                            <constraint firstItem="f8t-LD-DdC" firstAttribute="top" secondItem="kcE-oy-4pP" secondAttribute="top" constant="133" id="dLl-QX-Vl8"/>
+                            <constraint firstItem="f8t-LD-DdC" firstAttribute="leading" secondItem="kcE-oy-4pP" secondAttribute="leading" constant="67" id="eZi-so-6u5"/>
+                            <constraint firstItem="NWZ-ZR-iFy" firstAttribute="leading" secondItem="kcE-oy-4pP" secondAttribute="leading" constant="135" id="faO-A7-DYp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kcE-oy-4pP"/>
                     </view>
                     <navigationItem key="navigationItem" id="zfb-07-Pns">
@@ -336,23 +392,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EYo-8K-bH2">
-                                <rect key="frame" x="67" y="189" width="240" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EYo-8K-bH2">
+                                <rect key="frame" x="67" y="189" width="240" height="289"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">The police hear your call, and they follow the Centaur and Unicorn into the building. Streamers, balloons, and more are found in the warehouse. They are handcuffed and taken downtown. It is not spoken about again.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE END." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOc-eU-6yx">
-                                <rect key="frame" x="150" y="376" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE END." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOc-eU-6yx">
+                                <rect key="frame" x="150" y="532" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fOc-eU-6yx" firstAttribute="top" secondItem="EYo-8K-bH2" secondAttribute="bottom" constant="54" id="JVK-xa-iXI"/>
+                            <constraint firstItem="EYo-8K-bH2" firstAttribute="top" secondItem="I0v-8I-3Hb" secondAttribute="top" constant="125" id="Tcb-YC-L1E"/>
+                            <constraint firstItem="EYo-8K-bH2" firstAttribute="centerX" secondItem="Tj0-cN-tXx" secondAttribute="centerX" id="XDA-jP-Nap"/>
+                            <constraint firstItem="EYo-8K-bH2" firstAttribute="centerY" secondItem="Tj0-cN-tXx" secondAttribute="centerY" id="hVa-KF-VKb"/>
+                            <constraint firstItem="EYo-8K-bH2" firstAttribute="centerX" secondItem="fOc-eU-6yx" secondAttribute="centerX" id="nkw-ut-1eS"/>
+                            <constraint firstItem="EYo-8K-bH2" firstAttribute="leading" secondItem="I0v-8I-3Hb" secondAttribute="leading" constant="67" id="yfh-Nq-n53"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="I0v-8I-3Hb"/>
                     </view>
                     <navigationItem key="navigationItem" id="hHa-wq-RCt">
@@ -375,23 +437,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-QA-lV1">
-                                <rect key="frame" x="67" y="195" width="240" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE END." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXh-iS-yxh">
+                                <rect key="frame" x="150" y="521" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-QA-lV1">
+                                <rect key="frame" x="67" y="195" width="240" height="277"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You fight off the Centaur, and pick up the cake and shove it in his face. He eats some of the cake, and seems a bit distracted while you run out of the warehouse. You don't hear about them again, and move onto your iOS class.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE END." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXh-iS-yxh">
-                                <rect key="frame" x="150" y="377" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GXh-iS-yxh" firstAttribute="top" secondItem="QiQ-QA-lV1" secondAttribute="bottom" constant="49" id="6s6-Vh-qSn"/>
+                            <constraint firstItem="QiQ-QA-lV1" firstAttribute="centerX" secondItem="Ivs-zv-y4M" secondAttribute="centerX" id="KR4-YL-XuZ"/>
+                            <constraint firstItem="QiQ-QA-lV1" firstAttribute="centerY" secondItem="Ivs-zv-y4M" secondAttribute="centerY" id="aXt-Qp-5UD"/>
+                            <constraint firstItem="QiQ-QA-lV1" firstAttribute="top" secondItem="XsE-7f-fGj" secondAttribute="top" constant="131" id="f33-YC-KwA"/>
+                            <constraint firstItem="QiQ-QA-lV1" firstAttribute="leading" secondItem="XsE-7f-fGj" secondAttribute="leading" constant="67" id="kJw-KF-n3S"/>
+                            <constraint firstItem="QiQ-QA-lV1" firstAttribute="centerX" secondItem="GXh-iS-yxh" secondAttribute="centerX" id="vcW-Q1-8Mb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XsE-7f-fGj"/>
                     </view>
                     <navigationItem key="navigationItem" id="kYG-BW-ojf">
