@@ -234,7 +234,7 @@
                                     <segue destination="JTO-IO-Q21" kind="show" identifier="secondEndingSegue" id="NEo-M7-8HW"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You enter the warehouse, and it's much bigger than it looks. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-6u-V7f">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You enter the warehouse, and it's much bigger than it looks. There is a long corridor, looks like they went in there." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-6u-V7f">
                                 <rect key="frame" x="40" y="164" width="295" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
